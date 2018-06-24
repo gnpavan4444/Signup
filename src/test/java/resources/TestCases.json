@@ -1,0 +1,33 @@
+{
+  "Signup_TC001Verify that user is able to Sign up with Silver category for Germany country": {
+    "id": "01",
+    "Info": "TC001 - Verify that user is able to Sign up with Silver category for Germany country",
+    "Feature": "Signup",
+    "testName":"silverCategoryGermanSignUp",
+    "Validate": "SilverCategoryGermanySignup",
+    "testData":"Sheet1,1",
+    "creditCardTestData":"Sheet2,1",
+    "Execute": true
+  },
+  "Computer Dashboard_TC002Verify that user is able to update computer": {
+    "id": "02",
+    "Info": "TC002 - Verify that user is able to update the computer",
+    "Feature": "Computer",
+    "testName":"updateComputer",
+    "ActionFlow": "1",
+    "Validate": "GoldCategorySwitzerlandSignUp",
+    "testData":"Sheet1,2",
+    "ExecuteUTE": true
+  },
+  "Computer Dashboard_TC003Verify that user is able to remove computer": {
+    "id": "03",
+    "Info": "TC003 - Verify that user is able to remove computer",
+    "Feature": "Computer",
+    "testName":"deleteComputer",
+    "ActionFlow": "1",
+    "Validate": "RemoveComputer",
+    "testData":"Sheet1,2",
+    "ExecuteUTE": true
+  }
+
+}
