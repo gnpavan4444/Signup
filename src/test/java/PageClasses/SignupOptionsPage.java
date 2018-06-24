@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SignupOptionsPage {
     WebDriver driver;
+    public SignupOptionsPage(WebDriver driver){
+        this.driver=driver;
+    }
     @FindBy(xpath = "//P[contains(text(),'We use cookies')]")
     public WebElement cookiesText;
     @FindBy(className = "optanon-button-allow")

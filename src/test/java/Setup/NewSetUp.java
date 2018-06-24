@@ -2,6 +2,8 @@ package Setup;
 
 import Utilities.HTMLUtility;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 public class NewSetUp {
     public static WebDriver driver;
     PropertyUtils properties;
+    public static Logger logger;
     public static int testCasesCount=0;
     public static HashMap<Object,Object> testdata;
     public static String screenshotsPath=System.getProperty("user.dir") + File.separator + "screenshots\\";
@@ -33,6 +36,8 @@ public class NewSetUp {
         driver=new ChromeDriver();
         driver.get(properties.getPropertyValue("appURL"));
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        logger = Logger.getLogger("NewSetUp.class");
+        PropertyConfigurator.configure(properties.getPropertyValue("log4jproperties"));
 
 
 

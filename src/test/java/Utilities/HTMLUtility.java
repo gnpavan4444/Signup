@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.Date;
 
 public class HTMLUtility {
     public static StringBuffer htmlTemplate=new StringBuffer();
@@ -16,15 +17,27 @@ public class HTMLUtility {
     static String individualReportPath ="C:\\Users\\X085271\\Desktop\\html.html";
     public static void createHTMLTemplate() throws IOException{
         htmlTemplate.append(HTML_START);
-        htmlTemplate.append("<body><h1><center>Test Automation Report</h1><br/></body>");
+        htmlTemplate.append("<body><h1><center>Test Automation Report<style>h1.groove {border-style:groove;}body{background-color:#F8F8F8;}h1{background-color:#008CBA;color:white;text-align:center;}</style></h1><br/></body>");
         htmlTemplate.append("<style>table, th, td { border: 1px solid blue;</style>");
-        htmlTemplate.append("<table style=\"width:100%\">" +
-                "<tr>" +
-                "<th style=\"width:10%\">Sl No</th>"+
-                "<th style=\"width:60%\">Test Case Name</th>" +
-                "<th style=\"width:10%\">Status</th>" +
-                "<th style=\"width:10%\">Pass Percentage</th>" +
-                "<th style=\"width:10%\">Execution Time</th>" +
+        htmlTemplate.append("</h2>");
+        htmlTemplate.append("</div>");
+        htmlTemplate.append("<div>");
+        htmlTemplate.append("<h2 style='color:CornflowerBlue'>");
+        htmlTemplate.append(
+                "<style>table,th,td {border: 1px solid black;border-collapse;text-align: center; border-color: black; border-width: 1px;} </style>");
+        htmlTemplate.append(
+                "<table id='testcases' cellspacing='0' style='width: 100%' style='font-size: 20px;'> <tr bgcolor='black'>");
+        htmlTemplate.append("<div>");
+        htmlTemplate.append("<h2 style='color:whitesmoke'>");
+        htmlTemplate.append(
+                "<style>table,th,td {border: 1px solid black;border-collapse;text-align: center; border-color: #7B68EE; border-width: 1px;} </style>");
+        htmlTemplate.append("<table style=\"width:100%\"><tr bgcolor='#008CBA'>" +
+                "<tr bgcolor='#008CBA'>" +
+                "<th style=\"width:10%;color: white;\">Sl No</th>"+
+                "<th style=\"width:60%;color: white;\">Test Case Name</th>" +
+                "<th style=\"width:10%;color: white;\">Status</th>" +
+                "<th style=\"width:10%;color: white;\">Individual Report</th>" +
+                "<th style=\"width:10%;color: white;\">Execution Time</th>" +
                 "</tr>");
 
         //htmlTemplate.append(HTML_END);
@@ -58,14 +71,37 @@ public class HTMLUtility {
     }
     public static void testCaseExecutionStatus(int testCasesCount, String testCaseName, String status,String filePath) throws IOException {
         individualTestCaseReport(filePath+"\\");
-          htmlTemplate.append("<table style=\"width:100%\">" +
-                "<tr>" +
-                "<th style=\"width:10%\">"+testCasesCount+" </th>"+
-                "<th style=\"width:60%\">"+testCaseName+"</th>" +
-                "<th style=\"width:10%\"><a>"+status+"</a></th>" +
-                "<th style=\"width:10%\"><a href="+filePath+"\\"+"htmlFile.html"+">Report</a></th>" +
-                "<th style=\"width:10%\">Execution Time</th>" +
-                "</tr>");
+        if(status.equalsIgnoreCase("Pass")){
+            htmlTemplate.append("<table style=\"width:100%\">" +
+                    "<tr bgcolor='DarkSeaGreen' style='color:black'>" +
+                    "<th style=\"width:10%\">"+testCasesCount+" </th>"+
+                    "<th style=\"width:60%\">"+testCaseName+"</th>" +
+                    "<th style=\"width:10%\"><a>"+status+"</a></th>" +
+                    "<th style=\"width:10%\"><a href="+filePath+"\\"+"htmlFile.html"+">Report</a></th>" +
+                    "<th style=\"width:10%\">"+new Date()+"</th>" +
+                    "</tr>");
+
+        }else if(status.equalsIgnoreCase("Fail")){
+            htmlTemplate.append("<table style=\"width:100%\">" +
+                    "<tr bgcolor='LightPink' style='color:black'>" +
+                    "<th style=\"width:10%\">"+testCasesCount+" </th>"+
+                    "<th style=\"width:60%\">"+testCaseName+"</th>" +
+                    "<th style=\"width:10%\"><a>"+status+"</a></th>" +
+                    "<th style=\"width:10%\"><a href="+filePath+"\\"+"htmlFile.html"+">Report</a></th>" +
+                    "<th style=\"width:10%\">Execution Time</th>" +
+                    "</tr>");
+
+        }else{
+            htmlTemplate.append("<table style=\"width:100%\">" +
+                    "<tr bgcolor='grey' style='color:black'>" +
+                    "<th style=\"width:10%\">"+testCasesCount+" </th>"+
+                    "<th style=\"width:60%\">"+testCaseName+"</th>" +
+                    "<th style=\"width:10%\"><a>"+status+"</a></th>" +
+                    "<th style=\"width:10%\"><a href="+filePath+"\\"+"htmlFile.html"+">Report</a></th>" +
+                    "<th style=\"width:10%\">Execution Time</th>" +
+                    "</tr>");
+
+        }
         System.out.println("Test case execution count is"+testCasesCount);
         System.out.println("Test case name is"+testCaseName);
         System.out.println("Test case status is"+status);

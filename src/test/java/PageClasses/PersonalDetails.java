@@ -36,11 +36,11 @@ public class PersonalDetails {
     public WebElement licensePlateCountry;
     @FindBy(name = "vrn1")
     public WebElement licensePlateNumber;
-    @FindBy(id="iban")
+    @FindBy(xpath="//SPAN[@class='ng-scope'][text()='Direct debit']")
     public WebElement directDebitPaymentMethod;
     @FindBy(id="paypal")
     public WebElement paypalPaymentMethod;
-    @FindBy(id="cc")
+    @FindBy(xpath="//SPAN[@class='ng-scope'][text()='Credit card']")
     public WebElement creditCardPaymentMethod;
     @FindBy(xpath = "//SPAN[@class='ng-scope'][text()='Enter card details']")
     public WebElement enterCreditCardDetailsButton;

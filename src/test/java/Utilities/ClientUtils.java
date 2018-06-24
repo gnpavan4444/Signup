@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class ClientUtils {
     static WebDriver driver;
 
@@ -55,13 +57,19 @@ public class ClientUtils {
         }
     }
     public void scrollTillElementIsVisible(WebDriver driver,WebElement webElement){
-        while(!checkElementVisibility(driver,webElement)){
+        for(int i= 0; i < 4 ; i ++)
+        {
             JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
             javascriptExecutor.executeScript("window.scrollBy(0,40)");
+
+
+            i++;
         }
 
-
     }
+
+
+
     public WebElement dynamicXpathElements(WebDriver driver,WebElement webElement,String text){
        String webElementText= webElement.toString().replace("country",text);
        System.out.println("Web Element text is"+webElementText);

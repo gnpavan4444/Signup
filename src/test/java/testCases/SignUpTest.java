@@ -21,20 +21,66 @@ public class SignUpTest extends NewSetUp {
     TestCaseExecutor testCaseExecutor;
     TestCaseScenario testCaseScenario;
     HashMap<Object,Object>hashMap;
-    HomePage homePage = PageFactory.initElements(driver,HomePage.class);
-    PersonalDetails personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
-    SignupOptionsPage signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
-    ClientUtils clientUtils = new ClientUtils(driver);
+    HomePage homePage;
+     PersonalDetails personalDetails;
+     SignupOptionsPage signupOptionsPage;
+    ClientUtils clientUtils;
     @Test
     public void silverCategoryGermanSignUp() throws Exception {
         testCaseExecutor = new TestCaseExecutor();
         currentMethodName = new Object(){}.getClass().getEnclosingMethod().getName();
-        //System.out.println("Current method is"+currentMethodName);
-       hashMap= testCaseExecutor.createHashMapForSpecificRow(currentMethodName);
+        hashMap= testCaseExecutor.createHashMapForSpecificRow(currentMethodName);
        System.out.println("Hashmap is"+hashMap);
-       //System.out.println("Data from excel sheet for first column is"+hashMap.get("Introduced Date"));
-        signUp(hashMap,currentMethodName);
+       signUp(hashMap,currentMethodName);
+    }
 
+    @Test
+    public void passwordValidations() throws Exception {
+        testCaseExecutor = new TestCaseExecutor();
+        currentMethodName = new Object(){}.getClass().getEnclosingMethod().getName();
+        hashMap= testCaseExecutor.createHashMapForSpecificRow(currentMethodName);
+        homePage = PageFactory.initElements(driver,HomePage.class);
+        personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
+        signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
+        clientUtils = new ClientUtils(driver);
+        clientUtils.click(driver,homePage.signUpButton);
+        logger.info("Signup button is clicked");
+        logger.info("Checking the Cookies text visibility");
+        clientUtils.checkElementVisibility(driver,signupOptionsPage.cookiesText);
+        clientUtils.click(driver,signupOptionsPage.cookiesAllowButton);
+        logger.info("Clicked the Cookies text allow button");
+        // String currentMethodName = new Object(){}.getClass().getEnclosingMethod().getName();
+
+
+        clientUtils.click(driver,signupOptionsPage.countryButton);
+        logger.info("Clicked the Country button in Signup options page");
+        logger.info("Taking the screenshot of Signup page");
+        NewSetUp.getScreenshot(driver,index+"SignUpPage",currentMethodName);
+        ++index;
+        // WebElement countryWebElement = clientUtils.dynamicXpathElements(driver,signupOptionsPage.selectCountry,"France");
+        WebElement countryWebElement = signupOptionsPage.selectCountryFromList(driver,hashMap.get("Country").toString());
+        logger.info("Selecting the country");
+        clientUtils.click(driver,countryWebElement);
+        WebElement chooseButtonWebElement = signupOptionsPage.selectChooseButton(driver,hashMap.get("Package").toString());
+        logger.info("Clicking on the Choose button");
+        clientUtils.click(driver,chooseButtonWebElement);
+        logger.info("Waiting for personal details screen to load");
+        clientUtils.waitForElement(driver,personalDetails.personalDetailsTitle);
+        logger.debug("Taking screenshot for personal details screen");
+        NewSetUp.getScreenshot(driver,index+"PersonalDetails",currentMethodName);
+        ++index;
+        WebElement typeOfParkingWebElement = personalDetails.selectTypeOfParking(driver,hashMap.get("Type of Parking").toString());
+        logger.info("Clicking on the type of parking web element either Personal or Company type");
+        clientUtils.click(driver,typeOfParkingWebElement);
+        clientUtils.sendText(driver,personalDetails.firstName,hashMap.get("First name").toString());
+        clientUtils.sendText(driver,personalDetails.lastName,hashMap.get("Last name").toString());
+        clientUtils.sendText(driver,personalDetails.email,hashMap.get("Email address").toString());
+        clientUtils.sendText(driver,personalDetails.password,hashMap.get("Password").toString());
+        clientUtils.click(driver,personalDetails.confirmPassword);
+        Assert.assertTrue(clientUtils.checkElementVisibility(driver,personalDetails.passwordValidationErrorMessage));
+        clientUtils.sendText(driver,personalDetails.confirmPassword,hashMap.get("Confirm Password").toString());
+        clientUtils.click(driver,personalDetails.mobileNumber);
+        Assert.assertTrue(clientUtils.checkElementVisibility(driver,personalDetails.confirmPasswordValidationErrorMessage));
 
 
     }
@@ -46,30 +92,41 @@ public class SignUpTest extends NewSetUp {
 
 
     public void signUp(HashMap<Object, Object> hashMap,String currentMethodName) throws Exception {
-        HomePage homePage = PageFactory.initElements(driver,HomePage.class);
-        PersonalDetails personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
-        SignupOptionsPage signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
-        ClientUtils clientUtils = new ClientUtils(driver);
+         homePage = PageFactory.initElements(driver,HomePage.class);
+         personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
+        signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
+         clientUtils = new ClientUtils(driver);
 
         clientUtils.click(driver,homePage.signUpButton);
+        logger.info("Signup button is clicked");
+        logger.info("Checking the Cookies text visibility");
         clientUtils.checkElementVisibility(driver,signupOptionsPage.cookiesText);
         clientUtils.click(driver,signupOptionsPage.cookiesAllowButton);
+        logger.info("Clicked the Cookies text allow button");
        // String currentMethodName = new Object(){}.getClass().getEnclosingMethod().getName();
 
 
         clientUtils.click(driver,signupOptionsPage.countryButton);
+        logger.info("Clicked the Country button in Signup options page");
+        logger.info("Taking the screenshot of Signup page");
         NewSetUp.getScreenshot(driver,index+"SignUpPage",currentMethodName);
         ++index;
        // WebElement countryWebElement = clientUtils.dynamicXpathElements(driver,signupOptionsPage.selectCountry,"France");
         WebElement countryWebElement = signupOptionsPage.selectCountryFromList(driver,hashMap.get("Country").toString());
+        logger.info("Selecting the country");
         clientUtils.click(driver,countryWebElement);
         WebElement chooseButtonWebElement = signupOptionsPage.selectChooseButton(driver,hashMap.get("Package").toString());
+        logger.info("Clicking on the Choose button");
         clientUtils.click(driver,chooseButtonWebElement);
+        logger.info("Waiting for personal details screen to load");
         clientUtils.waitForElement(driver,personalDetails.personalDetailsTitle);
+        logger.info("Checking the title text of Personal details screen");
         Assert.assertEquals(personalDetails.personalDetailsTitle.getText().toString(),"PERSONAL DETAILS");
+        logger.debug("Taking screenshot for personal details screen");
         NewSetUp.getScreenshot(driver,index+"PersonalDetails",currentMethodName);
         ++index;
       WebElement typeOfParkingWebElement = personalDetails.selectTypeOfParking(driver,hashMap.get("Type of Parking").toString());
+      logger.info("Clicking on the type of parking web element either Personal or Company type");
       clientUtils.click(driver,typeOfParkingWebElement);
       clientUtils.sendText(driver,personalDetails.firstName,hashMap.get("First name").toString());
       clientUtils.sendText(driver,personalDetails.lastName,hashMap.get("Last name").toString());
@@ -80,7 +137,7 @@ public class SignUpTest extends NewSetUp {
       clientUtils.sendText(driver,personalDetails.mobileNumber,hashMap.get("Mobile Number").toString());
       clientUtils.scrollTillElementIsVisible(driver,personalDetails.licensePlateNumber);
       clientUtils.sendText(driver,personalDetails.licensePlateNumber,hashMap.get("License plate number").toString());
-      /*if((hashMap.get("Payment method").toString()).equalsIgnoreCase("Credit card")){
+      if((hashMap.get("Payment method").toString()).equalsIgnoreCase("Credit card")){
           creditCardPaymentMethod(hashMap,currentMethodName);
       }
       else if((hashMap.get("Payment method").toString()).equalsIgnoreCase("Direct debit")){
@@ -88,7 +145,7 @@ public class SignUpTest extends NewSetUp {
       }
       else if((hashMap.get("Payment method").toString()).equalsIgnoreCase("PayPal")){
           paypalPaymentMethod(hashMap,currentMethodName);
-      }*/
+      }
 
 
       NewSetUp.getScreenshot(driver,index+"AfterFillingPersonalDetails",currentMethodName);
@@ -98,6 +155,10 @@ public class SignUpTest extends NewSetUp {
 
     }
     public void creditCardPaymentMethod(HashMap<Object, Object> hashMap,String currentMethodName){
+        homePage = PageFactory.initElements(driver,HomePage.class);
+        personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
+        signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
+        clientUtils = new ClientUtils(driver);
         clientUtils.scrollTillElementIsVisible(driver,personalDetails.creditCardPaymentMethod);
         clientUtils.click(driver,personalDetails.creditCardPaymentMethod);
         clientUtils.click(driver,personalDetails.enterCreditCardDetailsButton);
@@ -105,11 +166,19 @@ public class SignUpTest extends NewSetUp {
 
     }
     public void directDebitPaymentMethod(HashMap<Object, Object> hashMap,String currentMethodName){
+        homePage = PageFactory.initElements(driver,HomePage.class);
+        personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
+        signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
+        clientUtils = new ClientUtils(driver);
         clientUtils.scrollTillElementIsVisible(driver,personalDetails.directDebitPaymentMethod);
         clientUtils.click(driver,personalDetails.directDebitPaymentMethod);
 
     }
     public void paypalPaymentMethod(HashMap<Object, Object> hashMap,String currentMethodName){
+        homePage = PageFactory.initElements(driver,HomePage.class);
+        personalDetails = PageFactory.initElements(driver,PersonalDetails.class);
+        signupOptionsPage = PageFactory.initElements(driver,SignupOptionsPage.class);
+        clientUtils = new ClientUtils(driver);
         clientUtils.scrollTillElementIsVisible(driver,personalDetails.paypalPaymentMethod);
         clientUtils.click(driver,personalDetails.paypalPaymentMethod);
     }
