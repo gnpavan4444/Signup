@@ -2,56 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="786b3289-c0ab-400c-9448-6d088cba2682" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Signup.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/application.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/testlog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/testlog1.log" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/discoveryCategoryFranceSignUp" beforeDir="false" afterPath="$PROJECT_DIR$/logs/discoveryCategoryFranceSignUp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/emailValidation" beforeDir="false" afterPath="$PROJECT_DIR$/logs/emailValidation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/errorValidationMessagesCheck" beforeDir="false" afterPath="$PROJECT_DIR$/logs/errorValidationMessagesCheck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/licensePlateNumberValidation" beforeDir="false" afterPath="$PROJECT_DIR$/logs/licensePlateNumberValidation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mobileNumberValidation" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mobileNumberValidation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/passwordValidations" beforeDir="false" afterPath="$PROJECT_DIR$/logs/passwordValidations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/silverCategoryGermanSignUp" beforeDir="false" afterPath="$PROJECT_DIR$/logs/silverCategoryGermanSignUp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passwordValidations/1SignUpPage.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passwordValidations/2PersonalDetails.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passwordValidations/htmlFile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/1SignUpPage.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/2PersonalDetails.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/3AfterFillingPersonalDetails.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/3SignUpPage.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/4PersonalDetails.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/5AfterFillingPersonalDetails.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/htmlFile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AppConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AppConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageClasses/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageclasses/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageClasses/PersonalDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageclasses/PersonalDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageClasses/SignupOptionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageclasses/SignupOptionsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Setup/NewSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setup/NewSetUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Setup/PropertyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setup/PropertyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Setup/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Setup/TestCaseExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setup/TestCaseExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Setup/TestCaseScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setup/TestCaseScenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/ClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ExcelUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/HTMLUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/HTMLUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/TestCases.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/TestCases.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/TestData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/SignUpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AppConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageClasses/PersonalDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageClasses/PersonalDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageClasses/SignupOptionsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageClasses/SignupOptionsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/NewSetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Setup/NewSetUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/PropertyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Setup/PropertyUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/TestCaseExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Setup/TestCaseExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/TestCaseScenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Setup/TestCaseScenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/ClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/ClientUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/ExcelUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/ExcelUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/HTMLUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/HTMLUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/TestCases.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/TestCases.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/TestData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/SignUpTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCases/SignUpTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/SignUpTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCases/SignUpTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/SignUpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCases/SignUpTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/2PersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/2PersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/3AfterFillingPersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/3AfterFillingPersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/4AfterfillingCreditcardetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/4AfterfillingCreditcardetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/5Creditcardtermsandconditions.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/5Creditcardtermsandconditions.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/discoveryCategoryFranceSignUp/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/emailValidation/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/emailValidation/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/emailValidation/2PersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/emailValidation/2PersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/emailValidation/3AfterFillingPersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/emailValidation/3AfterFillingPersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/emailValidation/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/emailValidation/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/errorValidationMessagesCheck/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/errorValidationMessagesCheck/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/errorValidationMessagesCheck/2ErrorValidationMessages.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/errorValidationMessagesCheck/2ErrorValidationMessages.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/errorValidationMessagesCheck/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/errorValidationMessagesCheck/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/2PersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/2PersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/3AfterFillingPersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/3AfterFillingPersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/licensePlateNumberValidation/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/mobileNumberValidation/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/mobileNumberValidation/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/mobileNumberValidation/2PersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/mobileNumberValidation/2PersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/mobileNumberValidation/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/mobileNumberValidation/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passwordValidations/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/passwordValidations/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passwordValidations/2PersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/passwordValidations/2PersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passwordValidations/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/passwordValidations/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/1SignUpPage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/1SignUpPage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/2PersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/2PersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/3AfterFillingPersonalDetails.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/3AfterFillingPersonalDetails.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/htmlFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/silverCategoryGermanSignUp/htmlFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/report/HtmlTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/report/HtmlTemplate.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,7 +54,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="SignUpTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SignUpTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testCases/SignUpTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -79,14 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ClientUtils.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1218">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="294">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -204,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/resources/TestCases.json" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Setup/NewSetUp.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageClasses/PersonalDetails.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageClasses/HomePage.java" />
@@ -217,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/test/java/Setup/TestCaseExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/AppConfig.properties" />
         <option value="$PROJECT_DIR$/src/test/java/testCases/SignUpTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -251,30 +235,12 @@
             <path>
               <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
               <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
               <item name="Signup" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
@@ -288,14 +254,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pageclasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
@@ -304,30 +262,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="setup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testCases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Signup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -625,7 +559,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49624062" weight="0.32919955" />
@@ -633,21 +566,21 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50805587" side_tool="true" visible="true" weight="0.25366405" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5016112" side_tool="true" visible="true" weight="0.11161218" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49194413" visible="true" weight="0.25366405" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4989259" weight="0.15558061" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49194413" weight="0.25366405" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49838883" visible="true" weight="0.11161218" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946293" weight="0.32919955" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8716012" visible="true" weight="0.22610097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88578683" visible="true" weight="0.22610097" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946293" weight="0.32807216" />
       <window_info id="Structure" order="1" sideWeight="0.50084037" side_tool="true" weight="0.22610097" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49838883" weight="0.3990981" />
-      <window_info id="Favorites" order="5" sideWeight="0.12839879" side_tool="true" visible="true" weight="0.22610097" />
+      <window_info id="Favorites" order="5" sideWeight="0.1142132" side_tool="true" visible="true" weight="0.22610097" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -952,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Setup/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1068,6 +994,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

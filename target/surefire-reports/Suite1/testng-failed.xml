@@ -6,11 +6,11 @@
       <class name="testCases.SignUpTest">
         <methods>
           <include name="getResult"/>
-          <include name="discoveryCategoryFranceSignUp"/>
-          <include name="atearDown"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
           <include name="setUp"/>
+          <include name="discoveryCategoryFranceSignUp"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="atearDown"/>
         </methods>
       </class> <!-- testCases.SignUpTest -->
     </classes>
