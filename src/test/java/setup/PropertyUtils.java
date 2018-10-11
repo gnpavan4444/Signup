@@ -21,6 +21,7 @@ public class PropertyUtils{
     private void loadPropertyFile(){
         try {
             InputStream is = this.getClass().getClassLoader().getResourceAsStream("AppConfig.properties");
+            //Loading the input stream
             properties.load(is);
             Enumeration enumeration = properties.propertyNames();
             for(;enumeration.hasMoreElements();) {
