@@ -107,6 +107,7 @@ public void selectMobileNumberCountry(String countryCode){
     select.selectByVisibleText("countryCode");
 
 }
+//Reusable methods using Page Objects
 public WebElement selectTypeOfParking(WebDriver driver,String parkingType){
     String xpath = "//SPAN[@class='ng-scope'][text()='typeOfParking']";
     String newXpath = xpath.replace("typeOfParking",parkingType);
