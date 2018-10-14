@@ -28,6 +28,7 @@ public class SignupOptionsPage {
     public WebElement selectCountrySwitzerland;
     @FindBy(xpath= "//BUTTON[@class='button ng-scope secondary']")
     public WebElement chooseButton;
+    //Reusable methods using the Page Objects
     public WebElement selectCountryFromList(WebDriver driver,String country){
         String xpath = ".//div[text()=' country']";
         String newXpath= xpath.replace("country",country);
