@@ -32,6 +32,7 @@ public class PropertyUtils{
             e.printStackTrace();
         }
     }
+    //This method returns Property values of keys
     public String getPropertyValue(String key)
     {
         return appProperties.get(key);
