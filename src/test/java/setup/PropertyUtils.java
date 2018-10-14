@@ -27,6 +27,7 @@ public class PropertyUtils{
             for(;enumeration.hasMoreElements();) {
                 String key = enumeration.nextElement().toString();
                 appProperties.put(key,properties.getProperty(key));
+                System.out.println("App properties are"+appProperties);
             }
         } catch (IOException e) {
             e.printStackTrace();
